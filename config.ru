@@ -16,6 +16,7 @@ toto = Toto::Server.new do
   # Add your settings here
   # set [:setting], [value]
   # 
+		set :url, 			'http://rubyonrio.heroku.com'
   # set :author,    ENV['USER']                               # blog author
   	set :title,     'Ruby on Rio'					                    # site title
   # set :root,      "index"                                   # page to load on /
