@@ -1,0 +1,21 @@
+<% for article in articles[0...10] %>
+<article class="text"> 
+	<header> 
+		<h1><a href="<%= article.path %>"><%= article.title %></a></h1>
+		<div class="timepub"> 
+			<time pubdate datetime="<%= article.date %>"><%= article.date.strftime("%d/%m/%Y") %></time> 
+		</div>
+	</header> 
+
+	<%= article.summary %>
+
+	<footer> 
+	</footer>
+</article>
+<% end %>
+
+<% if articles.size > 10 %>
+<nav>
+	<a href="/arquivo">arquivo &rarr;</a> 
+</nav>
+<% end %>
