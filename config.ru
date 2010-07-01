@@ -17,7 +17,7 @@ toto = Toto::Server.new do
   # set [:setting], [value]
   # 
   # set :author,    ENV['USER']                               # blog author
-  # set :title,     Dir.pwd.split('/').last                   # site title
+  	set :title,     'Ruby on Rio'					                    # site title
   # set :root,      "index"                                   # page to load on /
   # set :markdown,  :smart                                    # use markdown + smart-mode
   # set :disqus,    false                                 		# disqus id, or false
